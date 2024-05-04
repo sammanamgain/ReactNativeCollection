@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View,TouchableOpacity,Linking,TouchableWithoutFeedback} from 'react-native';
+import { StyleSheet, Text, View,Linking,TouchableWithoutFeedback} from 'react-native';
 import React from 'react';
 
 export default function Touchablecomponets() {
@@ -15,7 +15,7 @@ const handleReadmore = async (url:String)=>{
       <View style={styles.subcontainer} >
         <Text style={styles.subHeader}> Explore the UseEffect Hook</Text>
 
-        <TouchableWithoutFeedback onPress={()=>handleReadmore("https://reactnative.dev/docs/linking#handling-deep-links")}>
+        <TouchableWithoutFeedback onPress={()=>handleReadmore('https://reactnative.dev/docs/linking#handling-deep-links')}>
 
         <Text style={styles.paragraph}>
           useEffect is a React Hook that lets you synchronize a component with
@@ -24,7 +24,7 @@ const handleReadmore = async (url:String)=>{
           ....Read more
         </Text>
             </TouchableWithoutFeedback>
-        
+
       </View>
     </View>
   );
@@ -54,7 +54,5 @@ const styles = StyleSheet.create({
     marginHorizontal:10,
     paddingLeft:10,
     borderRadius:2,
-
-
   },
 });
